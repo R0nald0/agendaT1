@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/backgroudColor"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/backgroudColor"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/agenda"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/EmailTX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Email:"
+            android:textSize="20sp"
+
+            />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:hint="Email"
+            android:inputType="textWebEmailAddress"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/senhaTX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:text="Senha:"
+            android:textSize="20sp"
+            />
+
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="110dp"
+            android:hint="Senha"
+            android:password="true"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:inputType="numberPassword"
+            />
+
+    </FrameLayout>
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:baselineAligned="false"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:text="Entrar"
+            android:clickable="true"
+            >
+
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnCadastro"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:text="Cadastre-se"></Button>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    </ScrollView>
